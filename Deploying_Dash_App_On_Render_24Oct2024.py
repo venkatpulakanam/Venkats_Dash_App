@@ -26,7 +26,7 @@ def update_graph(value):
     fig = px.bar(df, x=value, y="tip")
     return fig
 
-# Run app on Render-compatible host and port
+# Run app on Render-compatible host and port number 5000
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
