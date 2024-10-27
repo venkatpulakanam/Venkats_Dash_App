@@ -24,10 +24,10 @@ app.layout = html.Div([radio_b, my_graph])
 def update_graph(value):
    fig = px.bar(df, x=value, y="tip")
    return fig
-# if __name__ == '__main__':
-#   app.run()
 if __name__ == '__main__':
-    app.run_server(debug=False)
+  app.run()
+# if __name__ == '__main__':
+  #  app.run_server(debug=False)
 
 
 # In[ ]:
